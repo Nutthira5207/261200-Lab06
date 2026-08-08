@@ -1,4 +1,10 @@
-package PACKAGE_NAME;
+public class Shark extends Fish {
+    @Override
+    public String swim() {
+        return "Shark is swimming fast!";
+    }
 
-public class Shark {
+    public String eat(Fish fish) {
+        return this.toString() + " is eating " + fish.toString();
+    }
 }
